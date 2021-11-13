@@ -1,0 +1,47 @@
+#dashboad_seller {
+ margin-left: 3rem; 
+ margin-bottom: 3rem;
+}
+#dashboad_seller_filter
+ {
+  display: flex;
+  justify-content: space-around;
+}
+#dashboard_ul {
+  display: flex;
+ justify-content: space-between;
+}
+#dashboard_ul li {
+  margin-left: 1.4rem;
+}
+
+#ft {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#authors_page_details {
+  margin: 2rem 5rem;
+}
+#authors_page_head {
+display: flex;
+}
+.book_by_author {
+  margin:2rem 0rem 1rem 0rem;
+}
+.blogs_wrapper {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1reml */
+}
+.blogs_wrapper {
+  margin-bottom: 2rem;
+}
+.blog_single {
+  margin-top: 1.5rem;
+}
+#books_by_author_pic_wrapper {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
+  

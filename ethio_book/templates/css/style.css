@@ -1,0 +1,300 @@
+.bis {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-row-gap: 2rem;
+}
+.books p{
+  font-size: 0.9rem;
+}
+p {
+font-size: 0.9rem;
+}
+/* *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+} */
+img {
+max-width: 100%;
+max-height: auto;
+}
+.card-b {
+   background-color: #ffffff;
+}
+.card-b p,
+.card-b div{
+align-items: center;
+text-align: center;
+}
+.card-b .single_card_b_img {
+ align-items: center;
+}
+.card-b p {
+text-align:center;
+}
+
+.double_row_catg {
+display: flex;
+}
+.single_row_catg {
+ display: flex;
+ flex-direction: column;
+}
+/***  Globals  ***/
+ul li {
+ list-style-type: none;
+}
+a{
+ text-decoration: none;
+ font-size: 1.1rem;
+}
+a:hover{
+ text-decoration: none;
+}
+body {
+overflow-x: hidden;
+}
+.ad_image {
+width: 100%;
+ height: 250px;
+}
+#cat_icon_wrapper{
+ display: grid;
+ grid-template-columns: repeat(6, 1fr) 50px;
+ justify-content: space-around;
+}
+#cat_icon_wrapper .fa {
+  color: #46585A;
+}
+#cat_icon_wrapper .arrow {
+  margin-top: 20px;
+  transition: all 200ms ease-in;
+}
+#cat_icon_wrapper .arrow:hover {
+  color:#00E5FF;
+}
+#cat_icon_wrapper p span {
+text-align:center;
+font-size: 0.9rem;
+align-items:center;
+}
+.d-n{
+display: none;
+}
+/***  Nab Bar  ***/
+#nav-bar {
+width: 100vw;
+position: sticky;
+top: 0rem;
+z-index: 100;
+}
+.main-nav-bar {
+display: flex;
+justify-content: space-around;
+width: 100vw;
+background-color: #363C46;
+align-items: center;
+height: 3%;
+}
+.main-nav-bar .fa-book-reader {
+color: #F2A712;
+}
+#text-logo {
+color: white;
+letter-spacing: 0.1rem;
+}
+.nav-bar {
+  width: 100vw;
+  background-color: rgba(54, 50, 70 ,79%);
+}
+.nav-bar ul {
+   display: flex;
+   justify-content: space-around;
+ align-items: center;
+}
+select {
+background-color: rgba(0, 0, 0, 6%);
+height: 100%;
+width: 70px;
+outline: none;
+border: none;
+}
+#main-search {
+background-color: white;
+ border: 1px solid #999;
+}
+#search_books {
+border: none;
+outline: none;
+width: 17rem;
+}
+#main-search .yellow {
+width: 15rem;
+height:100%;
+padding: .19rem 1.3rem;
+background-color: #12DBF2;
+}
+.cart {
+margin-top: 1rem;
+}
+.fa-cart-plus{
+position: relative;
+color: white;
+font-size: 1.4rem;
+}
+.item-quantity {
+color: white;
+position: absolute;
+top: -0.8rem;
+right:-1rem;
+}
+.nav-bar a {
+color: rgba(255, 255, 255, 80%)
+}
+.nav-bar a:hover {
+transition: all 400ms ease;
+color: #F2A712;
+}
+
+
+
+/*** Side bar ***/
+.language input{
+  margin-right: .3rem;
+}
+.side-bar {
+ margin-left: -1.5rem;
+}
+
+
+
+/*** Main Row ***/
+#main-rw {
+padding-top: 1.3rem;
+margin: 3rem 2rem 1rem 3rem;
+}
+#main-rw a {
+  color: rgba(0,0,0, 80%);
+}
+
+.book_card_container {
+display: grid;
+grid-gap: 40px;
+grid-template-columns: repeat(4, 1fr);
+/* justify-content: space-; */
+}
+.single-book {
+ height:auto;
+}
+
+/*** Footer ***/
+.footer {
+ width: 100%;
+ margin-bottom: -4rem;
+}
+.footer-wrapper {
+background-color: #363C46;
+}
+.footer p {
+ color: rgba(255,255,255,81%);
+}
+.footer h5 {
+ color: rgba(255,255,255);
+ margin: .9rem 0rem;
+}
+.footer h4 {
+ width: 100%;
+background-color: rgba(76,81,94,95%);
+z-index: 100;
+padding: .3rem 0rem;
+text-align: center;
+color: white;
+}
+.footer-divider {
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.cp {
+text-align:center;
+color:  #363C46;
+}
+@media screen and (max-width: 539px){
+ .book_card_container {
+  display: grid;
+  grid-gap: 0rem;
+  grid-template-columns: 1fr;
+}
+.side-bar{
+  display: none;
+}
+#main-search {
+width: 100px;
+}
+#main-search .yellow {
+width: 4rem;
+height:100%;
+padding: .19rem 1.3rem;
+background-color: #12DBF2;
+}
+.not-side-bar{
+  margin-left: -2rem;
+}
+.nav-bar ul {
+   display: grid;
+   grid-gap: .5rem;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr 1fr;
+}
+.footer-divider {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+text-align:center;
+}
+}
+
+@media screen and (max-width: 768px) {
+.side-bar{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+@media screen and (max-width: 1024px) {
+ /* styles */
+.book_card_container {
+display: grid;
+grid-gap: 2rem;
+grid-template-columns: repeat(2, 1fr);
+}
+#main-rw {
+margin: 3rem 0rem 1rem 6rem;
+}
+#main-rw {
+margin-left: 1rem;
+}
+.side-bar{
+  margin-left: -0.1rem;
+}
+}
+.side-bar p {
+  /* font-size: 3rem; */
+}
+.side-bar a:hover
+{
+  font-weight: bold;
+  color: #20A6FF;
+}
+.ad_detail {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
